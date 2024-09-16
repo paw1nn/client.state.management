@@ -8031,6 +8031,11 @@ recursive-readdir@^2.2.2:
   dependencies:
     minimatch "^3.0.5"
 
+red@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/red/-/red-0.0.1.tgz#313fecdf7ccefd0c3256bce119cb87e9fd2a6c21"
+  integrity sha512-TXQ8Xx3RfWpvJ4kR9/I+/wO9r6RqISC6u3vNOwZwALxa4f6uyEDcMfrGikaVKjMuEjykT4brH+ylaFVEyruZiQ==
+
 redent@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/redent/-/redent-3.0.0.tgz#e557b7998316bb53c9f1f56fa626352c6963059f"
@@ -8038,6 +8043,11 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-5.0.1.tgz#97fa26881ce5746500125585d5642c77b6e9447b"
+  integrity sha512-M9/ELqF6fy8FwmkpnF0S3YKOqMyoWJ4+CS5Efg2ct3oY9daQvd/Pc71FpGZsVsbl3Cpb+IIcjBDUnnyBdQbq4w==
 
 reflect.getprototypeof@^1.0.4:
   version "1.0.6"
