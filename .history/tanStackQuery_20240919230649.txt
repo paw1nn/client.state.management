@@ -1,0 +1,38 @@
+import {useQuery} from "@tanstack/react-query";
+const fetchUser =async()=>{
+    const res = await fetch('api/user');
+    return res.json()
+}
+
+mutation{
+    addUser(name:"Alice" ,email:"pawanpediredla@gmail.com"){
+        name
+        email
+    }
+}
+query{
+    user(id:"1){
+        name
+        email
+    }
+}
+
+
+import {useQuery} from "@tanstack/react-query"
+const fetchUser =async()=>{
+    const res = await fetch('api/user')
+return res.json()
+}
+
+function User(){
+    const {data,isLoading,error} =useQuery(['user'] ,fetchUser);
+    if(isLoading) return <div>Loading..</div>;
+    if(error) return <div>Error</div>;
+return(
+    <div>
+    <h1>{data.name}</h1>
+    <p></p>
+    </div>
+)
+
+}

@@ -1,0 +1,11 @@
+import {useQuery} from "@tanstack/react-query";
+const fetchUser =async()=>{
+    const res = await fetch('api/user');
+    return res.json()
+}
+
+mutation{
+    addUser(name:"Alice" ,email:"pawanpediredla@gmail.com"){
+        return
+    }
+}

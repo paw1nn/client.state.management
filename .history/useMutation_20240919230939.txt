@@ -1,0 +1,5 @@
+import {useMutation} from "@tanstack/react-query";
+const addUser =async (newUser)=>{
+    const res = await fetch('api/user');
+    
+}

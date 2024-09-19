@@ -1,0 +1,12 @@
+query {
+    user(id:"1"){
+        name
+        email
+        
+        }
+}
+mutation{
+    addUser(name:"ALice" ,email:"alice@example.com){
+        
+    }
+}
