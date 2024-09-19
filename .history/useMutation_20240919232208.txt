@@ -23,7 +23,7 @@ const fetchGraphQl =async (query,variables)={
     const res = await fetch('graphql',{
         method:'POST',
 headers :{'Content-type':'application/json},
-body:JSON.stringify({query,variables});
+body:JSON.stringify({queryQL,variables});
     });
     return res.json();
     
@@ -31,17 +31,6 @@ body:JSON.stringify({query,variables});
 
     function User(){
 const {data,isLoading} =useQuery(['user'],()=>{
-    fetchGraphQl(`query GetUser($id:"ID!){
-        user(id:$id){
-            name,email
-        }
-    }`,{id:"1"})
+    fetchGraph
 })
-if (isLoading return <div>Loading ....</div>)
-return (
-    <div>
-    <h1>{data.user.name}</h1>
-    <p>{data.user.email}</p>
-    </div>
-)
     }

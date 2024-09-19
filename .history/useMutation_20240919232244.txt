@@ -31,17 +31,8 @@ body:JSON.stringify({query,variables});
 
     function User(){
 const {data,isLoading} =useQuery(['user'],()=>{
-    fetchGraphQl(`query GetUser($id:"ID!){
-        user(id:$id){
-            name,email
-        }
-    }`,{id:"1"})
+    fetchGraphQl(`query GetUser(id:"ID!){
+        
+    }`)
 })
-if (isLoading return <div>Loading ....</div>)
-return (
-    <div>
-    <h1>{data.user.name}</h1>
-    <p>{data.user.email}</p>
-    </div>
-)
     }

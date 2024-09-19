@@ -40,8 +40,5 @@ const {data,isLoading} =useQuery(['user'],()=>{
 if (isLoading return <div>Loading ....</div>)
 return (
     <div>
-    <h1>{data.user.name}</h1>
-    <p>{data.user.email}</p>
-    </div>
 )
     }

@@ -35,13 +35,6 @@ const {data,isLoading} =useQuery(['user'],()=>{
         user(id:$id){
             name,email
         }
-    }`,{id:"1"})
+    }`,{id:"1})
 })
-if (isLoading return <div>Loading ....</div>)
-return (
-    <div>
-    <h1>{data.user.name}</h1>
-    <p>{data.user.email}</p>
-    </div>
-)
     }
