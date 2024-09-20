@@ -1,0 +1,10 @@
+npm install graphql graphql-request @tanstack/react-query
+
+function addUser=async (newUser)=>{
+    const res  = await fetch('/newUser',{
+        headers:{'Content-type}
+        body:JSON.stringify(newUser);
+
+    });
+    return res.json()
+}

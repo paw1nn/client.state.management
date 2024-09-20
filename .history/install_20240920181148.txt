@@ -1,0 +1,29 @@
+npm install graphql graphql-request @tanstack/react-query
+import {useQuery}  from "@tanstack-react-query";
+
+function addUser=async (newUser)=>{
+    const res  = await fetch('/newUser',{
+method:'POST',
+        headers:{'Content-type':'application/json}
+        body:JSON.stringify(newUser);
+    });
+    
+    return res.json()
+}
+
+function addUser(){
+const mutation = useMutation(newUser);
+const handleSubmit =(newUser)=>{
+
+}
+const {data,isLoading} = useQuery('[user'],()=>{
+    fetch(`
+    query Getuser()
+    `)
+})
+return(
+    <div>
+    <button onClick ={()=>handleSubmit({'name':'pawan'})}></button>
+    </div>
+)
+}

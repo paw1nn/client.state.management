@@ -1,0 +1,3 @@
+npm install graphql graphql-request @tanstack/react-query
+
+function 
